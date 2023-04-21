@@ -8,6 +8,6 @@ it('shift 0', () => {
   expect(caesarCipher('Hello world', 0)).toBe('Hello world');
 });
 
-it('test punctation', () => {
-  expect(caesarCipher('Hello!, World!!!'));
+it('test punctuation', () => {
+  expect(caesarCipher('Hello!, World!!!', 10)).toBe('rovvy!, gybvn!!!');
 });

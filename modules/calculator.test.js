@@ -36,3 +36,15 @@ it('divide(10 / 123)', () => {
 it('divide(10 / (-2))', () => {
   expect(calculator().divide(10, -2)).toBe(-5);
 });
+
+it('Multiply(3 * 2)', () => {
+  expect(calculator().multiply(3, 2)).toBe(6);
+});
+
+it('Multiply(10 * 123)', () => {
+  expect(calculator().multiply(10, 123)).toBe(1230);
+});
+
+it('Multiply(10 * (-100))', () => {
+  expect(calculator().multiply(10, -100)).toBe(-1000);
+});

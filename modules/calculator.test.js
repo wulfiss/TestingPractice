@@ -24,3 +24,15 @@ it('subtract(10 - 123)', () => {
 it('subtract(10 - (-100))', () => {
   expect(calculator().subtract(10, -100)).toBe(110);
 });
+
+it('divide(3 / 2)', () => {
+  expect(calculator().divide(3, 2)).toBeCloseTo(1.5);
+});
+
+it('divide(10 / 123)', () => {
+  expect(calculator().divide(10, 123)).toBeCloseTo(0.081);
+});
+
+it('divide(10 / (-2))', () => {
+  expect(calculator().divide(10, -2)).toBe(-5);
+});

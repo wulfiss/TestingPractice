@@ -5,10 +5,12 @@ const analyzeArray = (arr) => {
   };
 
   const minCal = () => Math.min(...arr);
+  const maxCal = () => Math.max(...arr);
 
   return {
     average: averageCal(),
     min: minCal(),
+    max: maxCal(),
   };
 };
 

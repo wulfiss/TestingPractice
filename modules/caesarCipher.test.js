@@ -1,20 +1,30 @@
-import caesarCipher from './caesarCipher.js';
-import { shiftChar } from './caesarCipher.js';
+import { shiftChar, caesarCipher } from './caesarCipher.js';
 
 /* it('shift 5', () => {
-  expect(caesarCipher('He', 5)).toBe('mjqqt btwqi');
+  expect(caesarCipher('hello world', 5)).toBe('mjqqt btwqi');
 });
- */
-/* it('shift 0', () => {
+
+it('shift 0', () => {
   expect(caesarCipher('Hello world', 0)).toBe('Hello world');
 });
 
 it('test punctuation', () => {
   expect(caesarCipher('Hello!, World!!!', 10)).toBe('rovvy!, gybvn!!!');
-});
- */
+}); */
 
-it('H', () => {
+it('H shift 5', () => {
+  expect(caesarCipher('H', 5)).toBe('M');
+});
+
+it('Y shift 5', () => {
+  expect(caesarCipher('Y', 5)).toBe('E');
+});
+
+it('x shift 9', () => {
+  expect(caesarCipher('x', 9)).toBe('h');
+});
+
+/* it('H', () => {
   expect(shiftChar(72, 5, 90, 65)).toBe(77);
 });
 
@@ -29,3 +39,4 @@ it('e', () => {
 it('y', () => {
   expect(shiftChar(121, 6, 122, 92)).toBe(98);
 });
+ */

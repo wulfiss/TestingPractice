@@ -4,8 +4,11 @@ const analyzeArray = (arr) => {
     return sum / arr.length;
   };
 
+  const minCal = () => Math.min(...arr);
+
   return {
     average: averageCal(),
+    min: minCal(),
   };
 };
 

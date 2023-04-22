@@ -18,6 +18,14 @@ it('H', () => {
   expect(shiftChar(72, 5, 90, 65)).toBe(77);
 });
 
+it('Y', () => {
+  expect(shiftChar(89, 6, 90, 65)).toBe(69);
+});
+
 it('e', () => {
   expect(shiftChar(101, 5, 122, 92)).toBe(106);
+});
+
+it('y', () => {
+  expect(shiftChar(121, 6, 122, 92)).toBe(101);
 });

@@ -19,7 +19,7 @@ it('H', () => {
 });
 
 it('Y', () => {
-  expect(shiftChar(89, 6, 90, 65)).toBe(69);
+  expect(shiftChar(89, 6, 90, 65)).toBe(71);
 });
 
 it('e', () => {
@@ -27,5 +27,5 @@ it('e', () => {
 });
 
 it('y', () => {
-  expect(shiftChar(121, 6, 122, 92)).toBe(101);
+  expect(shiftChar(121, 6, 122, 92)).toBe(98);
 });

@@ -67,10 +67,8 @@ const caesarCipher = (string, sVal) => {
 
     if (charAt >= 65 && charAt <= 90) {
       newChar = shiftChar(charAt, sVal, 90, 65);
-      console.log('newup', newChar);
     } else if (charAt >= 97 && charAt <= 122) {
       newChar = shiftChar(charAt, sVal, 122, 97);
-      console.log('newlo', newChar);
     } else {
       newChar = charAt;
     }
@@ -78,17 +76,19 @@ const caesarCipher = (string, sVal) => {
     newString += String.fromCharCode(newChar);
   }
 
-  console.log('kk', newString);
+  return newString;
 };
 
 const shiftChar = (char, shiftVal, max, min) => {
   let newChar = char + shiftVal;
 
   if (newChar < min) {
-    newChar = max - shiftVal;
+    let rest = min - newChar;
+    newChar = max - rest;
   }
   if (newChar > max) {
-    newChar = min + shiftVal;
+    let rest = newChar - max;
+    newChar = min + rest;
   }
   return newChar;
 };
